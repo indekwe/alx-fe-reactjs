@@ -5,7 +5,7 @@ import './App.css'
 import RecipeList from './components/RecipeList'
 import AddRecipeForm from './components/AddRecipeForm'
 import RecipeDetails from './components/RecipeDetails'
-
+import SearchBar from './components/SearchBar';
 function App() {
   return (
     <Router>
@@ -16,8 +16,6 @@ function App() {
         <Route path="/" element={<>
           <AddRecipeForm />
           <RecipeList />
-          <FavoritesList />
-          <RecommendationsList />
         </>} />
         <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
       </Routes>
