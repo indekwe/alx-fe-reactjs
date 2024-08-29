@@ -8,11 +8,21 @@ import RecipeDetails from './components/RecipeDetails'
 
 function App() {
   return (
-    <>
-      <RecipeList></RecipeList>
-      <AddRecipeForm ></AddRecipeForm>
-      <RecipeDetails></RecipeDetails>
-    </>
+    <Router>
+    <div>
+      <h1>Recipe Manager</h1>
+      <SearchBar />
+      <Routes>
+        <Route path="/" element={<>
+          <AddRecipeForm />
+          <RecipeList />
+          <FavoritesList />
+          <RecommendationsList />
+        </>} />
+        <Route path="/recipe/:recipeId" element={<RecipeDetails />} />
+      </Routes>
+    </div>
+  </Router>
   )
 }
 
