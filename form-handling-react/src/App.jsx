@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <FormikForms></FormikForms>
-      {/* <RegistrationForm></RegistrationForm> */}
+      <RegistrationForm></RegistrationForm>
     </>
   )
 }
