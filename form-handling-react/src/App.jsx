@@ -1,10 +1,10 @@
 import React from "react"
-import FormikForms from './components/FormikForms'
+import formikForm from './components/formikForm'
 import RegistrationForm from './components/RegistrationForm'
 function App() {
   return (
     <>
-      <FormikForms></FormikForms>
+      <formikForm></formikForm>
       <RegistrationForm></RegistrationForm>
     </>
   )
