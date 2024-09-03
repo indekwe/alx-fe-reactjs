@@ -9,7 +9,7 @@ function Nav() {
       <div>
       <nav>
         <button onClick={() => setPage('home')}>Home</button>
-        <button onClick={() => setPage('fetchData')}>Posts</button>
+        <button onClick={() => setPage('fetchPosts')}>Posts</button>
       </nav>
       {page === 'home' ? <HomePage /> : <PostsComponent />}
     </div>
