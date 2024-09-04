@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter  as Router,Routes,Route} from 'react-router-dom' 
+import ProtectedRoute from './ProtectedRoute'
 function Profile() {
     const authotication={token:false}
   return (
@@ -7,7 +8,7 @@ function Profile() {
       <Route element={<Profile></Profile>}>
     <Route path="/" element={<ProfileDetails ></ProfileDetails>}></Route>
     <Route path="/setting" element={<ProfileSettings></ProfileSettings>}></Route>
-    <Route element={<ProtectedRoutes></ProtectedRoutes>}></Route>
+    <Route element={<ProtectedRoute></ProtectedRoute>}></Route>
   </Route>
     </Routes>
     
