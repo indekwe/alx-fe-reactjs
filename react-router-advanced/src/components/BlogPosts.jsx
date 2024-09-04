@@ -2,10 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 function BlogPosts() {
-    const {userId}=useParams()
+    const {id}=useParams()
   return (
     <div>
-      <h2>Blog {userId}</h2>
+      <h2>Blog {id}</h2>
     </div>
   )
 }
