@@ -1,13 +1,14 @@
 import React from 'react'
+import {useAuth} from '.react'
 import { Outlet,Navigate } from 'react-router-dom'
 import {BrowserRouter  as Router,Routes,Route} from 'react-router-dom' 
-function ProtectedRoutes() {
-    const authotication={token:true}
+function ProtectedRoute() {
+    const useAuth={token:true}
   return (
     
-      authotication.token ? <Outlet></Outlet> : <Navigate to='loggin'></Navigate>
+    useAuth.token ? <Outlet></Outlet> : <Navigate to='loggin'></Navigate>
     
   )
 }
 
-export default ProtectedRoutes
+export default ProtectedRoute
