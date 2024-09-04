@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
     <Routes>       
-      <Route path='/blogs/:userId' element={<BlogPosts></BlogPosts>}></Route>
+      <Route path='/blog/:id' element={<BlogPosts></BlogPosts>}></Route>
       <Route path='/loggin' element={<UserLoggin></UserLoggin>}></Route>
       <Route element={<Profile></Profile>}></Route>
     </Routes>
