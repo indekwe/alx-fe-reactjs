@@ -10,12 +10,9 @@ function App() {
   return (
     <Router>
     <Routes>       
-      <Route element={<Profile></Profile>}>
-        <Route path="/" element={<ProfileDetails ></ProfileDetails>}></Route>
-        <Route path="/setting" element={<ProfileSettings></ProfileSettings>}></Route>
-      </Route>
       <Route path='/blogs/:userId' element={<BlogPosts></BlogPosts>}></Route>
       <Route path='/loggin' element={<UserLoggin></UserLoggin>}></Route>
+      <Route element={<Profile></Profile>}></Route>
     </Routes>
   </Router>
   )

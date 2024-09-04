@@ -1,9 +1,16 @@
 import React from 'react'
-import { Outlet,Navigate } from 'react-router-dom'
+import {BrowserRouter  as Router,Routes,Route} from 'react-router-dom' 
 function Profile() {
     const authotication={token:false}
   return (
-    authotication.token ? <Outlet></Outlet> : <Navigate to='loggin'></Navigate>
+    <Routes>
+      <Route element={<Profile></Profile>}>
+    <Route path="/" element={<ProfileDetails ></ProfileDetails>}></Route>
+    <Route path="/setting" element={<ProfileSettings></ProfileSettings>}></Route>
+    <Route element={<ProtectedRoutes></ProtectedRoutes>}></Route>
+  </Route>
+    </Routes>
+    
   )
 }
 
