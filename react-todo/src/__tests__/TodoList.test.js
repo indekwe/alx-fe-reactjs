@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from '@testing-library/react';
 import TodoList from '../components/TodoList'
-import TaskForm from '../components/TaskForm'
+import TodoForm from '../components/TodoForm'
 test('render task list', () => {
   render(<TodoList></TodoList>)
   expect(screen.getAllByRole('list').toBeInTheDocument())
@@ -13,7 +13,7 @@ fireEvent.click(screen.getAllByText('remove'))
   expect(removeTask).toHaveBeenCalledTimes(1)
 })
 test('task addition', () => {
-  render(<TaskForm></TaskForm>)
+  render(<TodoForm></TodoForm>)
   const addTask=jest.fn()
 fireEvent.click(screen.getAllByText('add task'))
   expect(addTask).toHaveBeenCalledTimes(1)
