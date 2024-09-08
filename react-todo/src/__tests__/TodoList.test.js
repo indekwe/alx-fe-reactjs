@@ -1,13 +1,13 @@
 import React from "react";
 import { render, screen, fireEvent } from '@testing-library/react';
-import TaskList from '../components/TodoList'
+import TodoList from '../components/TodoList'
 import TaskForm from '../components/TaskForm'
 test('render task list', () => {
-  render(<TaskList></TaskList>)
+  render(<TodoList></TodoList>)
   expect(screen.getAllByRole('list').toBeInTheDocument())
 })
 test('task remove', () => {
-  render(<TaskList></TaskList>)
+  render(<TodoList></TodoList>)
   const removeTask=jest.fn()
 fireEvent.click(screen.getAllByText('remove'))
   expect(removeTask).toHaveBeenCalledTimes(1)
