@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useTaskStore from '../store/useTaskStore';
 
-const TodoForm = () => {
+const addTodoForm = () => {
   const [text, setText] = useState('');
   const addTask = useTaskStore(state => state.addTask);
 
@@ -27,4 +27,4 @@ const TodoForm = () => {
   );
 }
 
-export default TodoForm;
+export default addTodoForm;
