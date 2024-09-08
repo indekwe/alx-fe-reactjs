@@ -1,4 +1,4 @@
-import TaskList from './components/TaskList'
+import TodoList from './components/TodoList'
 import TaskForm from './components/TaskForm';
 import Snackbar from '../src/components/Snackbar';
 
@@ -11,7 +11,7 @@ const App = () => {
         </div>
         <div className="mb-4">
           <TaskForm />
-          <TaskList />
+          <TodoList />
         </div>
          <Snackbar />
       </div>

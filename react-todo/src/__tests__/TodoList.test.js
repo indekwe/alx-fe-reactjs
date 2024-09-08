@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from '@testing-library/react';
-import TaskList from '../components/TaskList'
+import TaskList from '../components/TodoList'
 import TaskForm from '../components/TaskForm'
 test('render task list', () => {
   render(<TaskList></TaskList>)
