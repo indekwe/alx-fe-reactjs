@@ -4,6 +4,7 @@ export default {
   content: [],
   darkMode: false,
   theme: { extend: {} },
+  variants: { extend: {} },
   plugins: [],
 }
 
