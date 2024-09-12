@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Rice Carbonara",
+      "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+      "image": "/pictures/rice1.PNG"
+    },
+    {
+      "id": 2,
+      "title": "Chicken rice Tikka Masala",
+      "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+      "image": "/pictures/rice2.PNG"
+    },
+    {
+      "id": 3,
+      "title": "Beef rice Tikka Masala",
+      "summary": "Citron of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+      "image": "/pictures/rice3.PNG"
+    },
+    {
+      "id": 4,
+      "title": "Boiled rice Tikka Masala",
+      "summary": "Boiled of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+      "image": "/pictures/rice4.PNG"
+    }
+  ]
