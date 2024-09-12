@@ -1,11 +1,11 @@
 import './index.css'
-
+import HomePage from './components/HomePage'
 
 function App() {
   return (
-    <div className='text-blue-500'>
-      <p>Hello world</p>
-    </div>
+   <>
+   <HomePage></HomePage>
+   </>
   )
 }
 
