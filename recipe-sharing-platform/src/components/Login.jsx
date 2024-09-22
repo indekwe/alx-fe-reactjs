@@ -107,7 +107,7 @@ const Login = () => {
                 className="w-full bg-gray-500 text-xl text-white py-3 rounded-lg flex items-center justify-center space-x-2 hover:bg-gray-600 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400"
                 >
                 <span>Login</span>
-                <UserPlusIcon className="w-7 h-7" /> 
+                <UserPlusIcon className="w-10 h-10" /> 
             </button>
             </Form>
           </div>
