@@ -3,24 +3,33 @@
       "id": 1,
       "title": "Rice Carbonara",
       "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-      "image": "/pictures/rice1.PNG"
+      "image": "/pictures/rice1.PNG",
+      "ingredients": "eggs,cheese, bacon, 1 cup of rice, 2 large eggs, 1/2 cup grated Parmesan cheese, 2 cloves garlic, 1/4 cup heavy cream, and black pepper",
+      "instructions": "Cook the rice and set it aside. Fry the bacon until crispy, remove it from the pan, and drain, leaving some bacon fat in the skillet. Whisk together eggs, Parmesan, and cream in a small bowl. Sauté garlic in the bacon fat, then stir in the cooked rice and pour in the egg mixture off the heat, stirring quickly to create a creamy sauce. Finally, mix in the crispy bacon, season with salt and pepper, and serve."
     },
     {
       "id": 2,
       "title": "Chicken rice Tikka Masala",
       "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "/pictures/rice2.PNG"
+      "image": "/pictures/rice2.PNG",
+      "instructions": "Start by cooking the rice and setting it aside. Marinate chicken pieces in yogurt, garlic, ginger, and spices like cumin, coriander, and turmeric for at least 30 minutes. Grill or sauté the chicken until cooked through, then remove from heat. In the same pan, prepare the Tikka Masala sauce by sautéing onions, garlic, and spices, then add tomato puree and cream, letting it simmer until thickened. Add the cooked chicken to the sauce, mix with the rice, and serve hot, garnished with fresh cilantro.",
+      "ingredients": "Chicken, rice, yogurt, garlic, ginger, onions, tomato puree, cream, cilantro, and spices (cumin, coriander, turmeric, garam masala, paprika). Salt, pepper, and oil for cooking."
     },
     {
       "id": 3,
       "title": "Beef rice Tikka Masala",
       "summary": "Citron of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "/pictures/rice3.PNG"
+      "image": "/pictures/rice3.PNG",
+      "instructions": "Start by cooking the rice and setting it aside. Marinate beef chunks in yogurt, garlic, ginger, and spices like cumin, coriander, and turmeric for at least 30 minutes. Sear the beef in a hot pan until browned, then set it aside. In the same pan, sauté onions, garlic, and spices, add tomato puree and cream, and simmer until the sauce thickens. Add the cooked beef to the sauce, mix with the rice, and serve hot, garnished with fresh cilantro.",
+      "ingredients": "Beef, rice, yogurt, garlic, ginger, onions, tomato puree, cream, cilantro, and spices (cumin, coriander, turmeric, garam masala, paprika). Salt, pepper, and oil for cooking."
+    
     },
     {
       "id": 4,
       "title": "Boiled rice Tikka Masala",
       "summary": "Boiled of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-      "image": "/pictures/rice4.PNG"
+      "image": "/pictures/rice4.PNG",
+      "instructions": "Start by boiling the rice in salted water until tender, then drain and set aside. In a pan, heat oil and sauté onions, garlic, and ginger until softened. Add spices like cumin, coriander, turmeric, and garam masala, then stir in tomato puree and cream, letting the sauce simmer until it thickens. Mix the boiled rice into the Tikka Masala sauce, ensuring it's well coated. Serve hot, garnished with fresh cilantro.",
+      "ingredients": "Rice, onions, garlic, ginger, tomato puree, cream, cilantro, and spices (cumin, coriander, turmeric, garam masala, paprika). Salt, pepper, and oil for cooking."
     }
   ]
