@@ -40,7 +40,7 @@ function RecipeDetail() {
                 <img className="rounded-full hover:shadow-2xl" src={choosenRecipe.image} alt={choosenRecipe.title} />
                 <div>
                     <div>
-                    <h2>Ingridients</h2>
+                    <h2 className='font-extrabold'>Ingridients</h2>
                     <p>{choosenRecipe.ingredients}</p>
                     </div>
                     <div>
