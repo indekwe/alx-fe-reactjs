@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 
     const githubUrl= process.env._REACT_APP_URL
     const githubKey= process.env._REACT_APP_GITHUB_API_KEY
@@ -21,3 +21,4 @@ import React from 'react'
     }
 
 export default fetchApiGithub
+ */
