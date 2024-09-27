@@ -1,5 +1,5 @@
 import React from 'react'
-import FetchUserData from '../services/githubService'
+import fetchUserData from '../services/githubService'
 import {useState} from 'react'
 
 function Search() {
@@ -17,7 +17,7 @@ const handleSubmit=async(e)=>{
     setGithubUserData(null)
     setError('')
     try {
-        const response=await FetchUserData(username)
+        const response=await fetchUserData(username)
         setGithubUserData(response.data)
     }
     catch {
