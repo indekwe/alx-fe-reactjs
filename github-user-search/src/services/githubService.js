@@ -1,5 +1,5 @@
 import axios from 'axios'
-const FetchUserData=(username)=>{
+function fetchUserData(username) {
     const githubUrl= process.env.REACT_APP_URL.replace('{username}',username)
     const githubKey= process.env.REACT_APP_GITHUB_API_KEY
     return axios.get(githubUrl,{
@@ -9,4 +9,4 @@ const FetchUserData=(username)=>{
     })
   
 }
-export default FetchUserData
+export default fetchUserData
