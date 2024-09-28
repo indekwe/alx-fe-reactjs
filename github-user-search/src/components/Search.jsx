@@ -59,9 +59,9 @@ const handleSubmit=async(e)=>{
             {githubUserData.map((user)=>(
                 <div key={user.id}>
                     <img src={user.avatar_url} alt={user.login} width="100" />
-                    <p>Name: {user.login}</p>
-                    <p>Location: {user.location}</p>
-                    <p>Repos: {user.public_repos}</p>
+                    <p className="text-sm font-medium">Name: {user.login}</p>
+                    <p className="text-sm font-medium">Location: {user.location}</p>
+                    <p className="text-sm font-medium">Repos: {user.public_repos}</p>
                     <a href={user.html_url} target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
                 </div>
                 
