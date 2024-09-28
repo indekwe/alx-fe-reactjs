@@ -3,22 +3,20 @@ import fetchUserData from '../services/githubService'
 import {useState} from 'react'
 
 function Search() {
-const [username,setUsername]=useState('')
+const [login,setLogin]=useState('')
+const [location,setLocation]=useState('')
+const [repos,setRepos]=useState('')
 const [githubUserData,setGithubUserData]=useState(null)
 const [isLoading,setIsLoading]=useState(false)
 const [error,setError]=useState('')
-const handleChanges=(e)=>{
-    setUsername(e.target.value)
-    
-}
 const handleSubmit=async(e)=>{
     e.preventDefault();
     setIsLoading(true)
     setGithubUserData(null)
     setError('')
     try {
-        const response=await fetchUserData(username)
-        setGithubUserData(response.data)
+        const response=await fetchUserData({login,location,repos})
+        setGithubUserData(response.data.items)
     }
     catch {
         setError('Looks like we cant find the user')
@@ -35,8 +33,22 @@ const handleSubmit=async(e)=>{
            <input 
            type='text'
            placeholder='Username'
-           value={username}
-           onChange={handleChanges}
+           value={login}
+           onChange={(e)=>setLogin(e.target.value)}
+           ></input>
+           <input 
+           id='location'
+           type='text'
+           placeholder='Search location'
+           value={location}
+           onChange={(e)=>setLocation(e.target.value)}
+           ></input>
+           <input 
+           id='repos'
+           type='text'
+           placeholder='Minimum repos'
+           value={repos}
+           onChange={(e)=>setRepos(e.target.value)}
            ></input>
            <button type='submit'>Search</button>
         </form>
@@ -44,10 +56,17 @@ const handleSubmit=async(e)=>{
         {error && <p>{error}</p>}
         {githubUserData && (
         <div>
-          <img src={githubUserData.avatar_url} alt={githubUserData.name} width="100" />
-          <p>Name: {githubUserData.name}</p>
-          <p>Username: {githubUserData.login}</p>
-          <a href={githubUserData.html_url} target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
+            {githubUserData.map((user)=>(
+                <div key={user.id}>
+                    <img src={user.avatar_url} alt={user.login} width="100" />
+                    <p>Name: {user.login}</p>
+                    <p>Location: {user.location}</p>
+                    <p>Repos: {user.public_repos}</p>
+                    <a href={user.html_url} target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
+                </div>
+                
+            ))}
+          
         </div>
     )}
     </div>
