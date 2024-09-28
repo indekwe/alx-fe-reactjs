@@ -5,7 +5,7 @@ import {useState} from 'react'
 function Search() {
 const [login,setLogin]=useState('')
 const [location,setLocation]=useState('')
-const [repos,setRepos]=useState('')
+const [minRepos,setRepos]=useState('')
 const [githubUserData,setGithubUserData]=useState(null)
 const [isLoading,setIsLoading]=useState(false)
 const [error,setError]=useState('')
@@ -15,7 +15,7 @@ const handleSubmit=async(e)=>{
     setGithubUserData(null)
     setError('')
     try {
-        const response=await fetchUserData({login,location,repos})
+        const response=await fetchUserData({login,location,minRepos})
         setGithubUserData(response.data.items)
     }
     catch {
@@ -47,7 +47,7 @@ const handleSubmit=async(e)=>{
            id='repos'
            type='text'
            placeholder='Minimum repos'
-           value={repos}
+           value={minRepos}
            onChange={(e)=>setRepos(e.target.value)}
            ></input>
            <button type='submit'>Search</button>
@@ -61,7 +61,7 @@ const handleSubmit=async(e)=>{
                     <img src={user.avatar_url} alt={user.login} width="100" />
                     <p className="text-sm font-medium">Name: {user.login}</p>
                     <p className="text-sm font-medium">Location: {user.location}</p>
-                    <p className="text-sm font-medium">Repos: {user.public_repos}</p>
+                    <p className="text-sm font-medium">Repos: {user.public_minRepos}</p>
                     <a href={user.html_url} target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
                 </div>
                 

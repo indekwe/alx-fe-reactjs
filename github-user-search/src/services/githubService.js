@@ -1,16 +1,16 @@
 import axios from 'axios'
-function fetchUserData({username,location,repos}) {
+function fetchUserData({login,location,minRepos}) {
     const query=[]
-    if(username){
-        query.push(`${username} logged in`)
+    if(login){
+        query.push(`${login} logged in`)
     }
     if(location){
         query.push(`location: ${location}`)
     }
-    if(username){
-        query.push(`repos: ${repos}`)
+    if(minRepos){
+        query.push(`repos: ${minRepos}`)
     }
-    const githubUrl= `${process.env.REACT_APP_URL}?q=${query.join('+')}&page=${page}&per_page=${perPage}`
+    const githubUrl= `https://api.github.com/search/users?q=${query.join('+')}&page=${page}&per_page=${perPage}`
     const githubKey= process.env.REACT_APP_GITHUB_API_KEY
     return axios.get(githubUrl,{
         headers: {
